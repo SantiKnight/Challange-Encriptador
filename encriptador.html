@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador - Alura Challange</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="imagenes/Vector.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <h1 class="titulo">Encriptador Alura Challange</h1>
+    </header>
+
+    <main class="contenido-principal contenedor">
+        <section class="contenedor-descriptar">
+            <div class="input">
+                <textarea id="texto-input" class="input-text" cols="30" rows="10" placeholder="Ingrese su texto aquí"></textarea>
+            </div>
+            <span class="aviso-texto">Solo letras minúsculas y sin acentos</span>
+            <div class="botones">
+                <button class="boton-encriptar">Encriptar</button>
+                <button class="boton-desencriptar">Desencriptar</button>
+            </div>
+        </section>
+       
+        <section class="contenedor-resultado">
+            <div class="mesaje-salida">
+                <textarea readonly name="resultado" placeholder="Ningún mensaje fue encontrado" id="salida" cols="30" rows="10"></textarea>
+            </div>
+            <img src="imagenes/Vector.png" id="logo">
+            <div class="copiar">
+                <button class="btn-copiar">Copiar texto</button>
+            </div>
+        </section>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
