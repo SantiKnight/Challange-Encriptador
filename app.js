@@ -34,7 +34,8 @@ function encriptarTexto() {
         .replaceAll("a", "ai")
         .replaceAll("o", "ober")
         .replaceAll("u", "ufat")
-
+    
+    mensaje.value = "";
     return textoEncriptado;
 }
 
@@ -48,6 +49,7 @@ function desencriptarTexto() {
         .replaceAll("ober", "o")
         .replaceAll("ufat", "u")
 
+    mensaje.value="";
     return textoDesencriptado;
 }
 
